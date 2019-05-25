@@ -1,8 +1,7 @@
 # TGAnalysis
 ThermoGravimetric Analysis (TGA) helps in understanding and optimising pyrolysis process.
 
-## Note
-    Some basic points 
+    Note
 1.  TG = Mass loss vs time graph for a sample during pyrolysis.
 2.  DTG = Differential TG.
 3.  T = Temperature.
@@ -11,10 +10,9 @@ ThermoGravimetric Analysis (TGA) helps in understanding and optimising pyrolysis
 6.  HHV = Higher Heating Value.
 
 ## Problem Statement
-**The main aim of this repository is to extract components, kinetic parameters and higher heating value from TG data beside sample seggregation and identification. Assuming that the overall DTG is the linear combination of DTGs of individual components.**
+   **The main aim of this repository is to extract components, kinetic parameters and higher heating value from TG data beside sample seggregation and identification. Assuming that the overall DTG is the linear combination of DTGs of individual components.**
 
-## Code Structure
-    The code structure is as follows 
+    Code Structure
 1.  Initialistion.m : The first file to be run, loads the dataset
 2.  MixtureModel.m : This file uses Mixture Modelling to deconvolute the DTG dataset to extract individual components.
 3.  Components.m : Extracting individual components
@@ -28,5 +26,5 @@ ThermoGravimetric Analysis (TGA) helps in understanding and optimising pyrolysis
 
 ###### All other files are either dependent or other files like .sfit etc.
 
-Made by:
+    Made by:
 > Mayank Mahawar
