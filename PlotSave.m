@@ -1,7 +1,13 @@
+%% Instructions
+% This script generates and saves plots from Plot1 to Plot 150 in Plots
+% subfolder inside the main TGAnalysis folder. To generate a particular or
+% set of plots use commenting as folllows.
+% To start comment block use %{
+% To end comment use %}
+% Use them to block out any options appropriately to comment the not needed code block
 %% Presets
 set(0,'DefaultFigureVisible','off');
 set(groot,'defaultLineLineWidth',2);
-%{
 %% Plot 1
 x  = Kinetic.k1{1,1}(:,1);
 y1 = Kinetic.k1{1,1}(:,2)./1e3;
@@ -17,6 +23,7 @@ ylabel('\bf E_{a} (KJ/mol) \it Activation Energy','fontsize',20)
 title('Rate Isoconversional Methods','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(1),[pwd '/Plots/Plot1.png']);
 %% Plot 2
 x  = Kinetic.k2{1,1}(:,1);
 y1 = Kinetic.k2{1,1}(:,2)./1e3;
@@ -32,6 +39,7 @@ ylabel('\bf E_{a} (KJ/mol) \it Activation Energy','fontsize',20)
 title('Kissinger Akahira Sunose (KAS)','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(2),[pwd '/Plots/Plot2.png']);
 %% Plot 3
 x  = Kinetic.k3{1,1}(:,1);
 y1 = Kinetic.k3{1,1}(:,2)./1e3;
@@ -47,6 +55,7 @@ ylabel('\bf E_{a} (KJ/mol) \it Activation Energy','fontsize',20)
 title('Senum Yang Approximation','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(3),[pwd '/Plots/Plot3.png']);
 %% Plot 4
 x  = Kinetic.k4{1,1}(:,1);
 y1 = Kinetic.k4{1,1}(:,2)./1e3;
@@ -62,6 +71,7 @@ ylabel('\bf E_{a} (KJ/mol) \it Activation Energy','fontsize',20)
 title('Coats Redfern Approximation','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(4),[pwd '/Plots/Plot4.png']);
 %% Plot 5
 x  = Kinetic.k5{1,1}(:,1);
 y1 = Kinetic.k5{1,1}(:,2)./1e3;
@@ -77,6 +87,7 @@ ylabel('\bf E_{a} (KJ/mol) \it Activation Energy','fontsize',20)
 title('Flynn Wall Ozawa (FWO)','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(5),[pwd '/Plots/Plot5.png']);
 %% Plot 6
 x  = Kinetic.k6{1,1}(:,1);
 y1 = Kinetic.k6{1,1}(:,2)./1e3;
@@ -92,6 +103,7 @@ ylabel('\bf E_{a} (KJ/mol) \it Activation Energy','fontsize',20)
 title('Murray White k=1.95 Approximation','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(6),[pwd '/Plots/Plot6.png']);
 %% Plot 7
 x  = Kinetic.k7{1,1}(:,1);
 y1 = Kinetic.k7{1,1}(:,2)./1e3;
@@ -107,6 +119,7 @@ ylabel('\bf E_{a} (KJ/mol) \it Activation Energy','fontsize',20)
 title('Murray White k=1.92 Approximation','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(8),[pwd '/Plots/Plot8.png']);
 %% Plot 8
 x  = Kinetic.k11{1,1}(:,1);
 y1 = Kinetic.k11{1,1}(:,2)./1e3;
@@ -122,8 +135,9 @@ ylabel('\bf E_{a} (KJ/mol) \it Activation Energy','fontsize',20)
 title('Vyazkovin AIC Method','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
-%%% Pre exponential factor Plots
+saveas(h(8),[pwd '/Plots/Plot8.png']);
 %% Plot 9
+%%% Pre exponential factor Plots
 x  = Kinetic.k1{1,1}(:,1);
 y1 = Kinetic.k1{1,1}(:,3);
 y2 = Kinetic.k1{2,1}(:,3);
@@ -138,6 +152,7 @@ ylabel('\bf k_{0} (s^{-1}) \it Pre exp factor','fontsize',20)
 title('Rate Isoconversional Methods','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(9),[pwd '/Plots/Plot9.png']);
 %% Plot 10
 x  = Kinetic.k2{1,1}(:,1);
 y1 = Kinetic.k2{1,1}(:,3);
@@ -153,6 +168,7 @@ ylabel('\bf k_{0} (s^{-1}) \it Pre exp factor','fontsize',20)
 title('Kissinger Akahira Sunose (KAS)','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(10),[pwd '/Plots/Plot10.png']);
 %% Plot 11
 x  = Kinetic.k3{1,1}(:,1);
 y1 = Kinetic.k3{1,1}(:,3);
@@ -168,6 +184,7 @@ ylabel('\bf k_{0} (s^{-1}) \it Pre exp factor','fontsize',20)
 title('Senum Yang Approximation','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(11),[pwd '/Plots/Plot11.png']);
 %% Plot 12
 x  = Kinetic.k4{1,1}(:,1);
 y1 = Kinetic.k4{1,1}(:,3);
@@ -183,6 +200,7 @@ ylabel('\bf k_{0} (s^{-1}) \it Pre exp factor','fontsize',20)
 title('Coats Redfern Approximation','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(12),[pwd '/Plots/Plot12.png']);
 %% Plot 13
 x  = Kinetic.k5{1,1}(:,1);
 y1 = Kinetic.k5{1,1}(:,3);
@@ -198,6 +216,7 @@ ylabel('\bf k_{0} (s^{-1}) \it Pre exp factor','fontsize',20)
 title('Flynn Wall Ozawa (FWO)','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(13),[pwd '/Plots/Plot13.png']);
 %% Plot 14
 x  = Kinetic.k6{1,1}(:,1);
 y1 = Kinetic.k6{1,1}(:,3);
@@ -213,6 +232,7 @@ ylabel('\bf k_{0} (s^{-1}) \it Pre exp factor','fontsize',20)
 title('Murray White k=1.95 Approximation','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(14),[pwd '/Plots/Plot14.png']);
 %% Plot 15
 x  = Kinetic.k7{1,1}(:,1);
 y1 = Kinetic.k7{1,1}(:,3);
@@ -228,6 +248,7 @@ ylabel('\bf k_{0} (s^{-1}) \it Pre exp factor','fontsize',20)
 title('Murray White k=1.92 Approximation','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(15),[pwd '/Plots/Plot15.png']);
 %% Plot 16
 x  = Kinetic.k11{1,1}(:,1);
 y1 = Kinetic.k11{1,1}(:,3);
@@ -243,9 +264,9 @@ ylabel('\bf k_{0} (s^{-1}) \it Pre exp factor','fontsize',20)
 title('Vyazkovin AIC Method','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
-
-%%% Other Analysis
+saveas(h(16),[pwd '/Plots/Plot16.png']);
 %% Plot 17
+%%% Other Analysis
 x   =  Kinetic.k2{1,1}(:,1);
 y1  = (Kinetic.k3{1,1}(:,2)- Kinetic.k2{1,1}(:,2))./Kinetic.k3{1,1}(:,2);
 y2  = (Kinetic.k3{1,1}(:,2)- Kinetic.k4{1,1}(:,2))./Kinetic.k3{1,1}(:,2);
@@ -300,6 +321,7 @@ lgd  = legend('KAS Type','Asymp.','Linear','Murray_{1.95}','Murray_{1.92}');
 set(lgd,'Position', [0.89 0.7 0.1 0.2],'Units', 'normalized');
 lgd.FontSize = 20;
 sgtitle('Experimental Relative Error wrt Polynomial Approx.','fontweight','bold','fontsize',28)
+saveas(h(17),[pwd '/Plots/Plot17.png']);
 %% Plot 18
 x   =  Kinetic.k2{1,1}(:,1);
 y1  = (Kinetic.k3{1,1}(:,3)- Kinetic.k2{1,1}(:,3))./Kinetic.k3{1,1}(:,3);
@@ -355,6 +377,7 @@ lgd  = legend('KAS Type','Asymp.','Linear','Murray_{1.95}','Murray_{1.92}');
 set(lgd,'Position', [0.89 0.7 0.1 0.2],'Units', 'normalized');
 lgd.FontSize = 20;
 sgtitle('Experimental Relative Error wrt Polynomial Approx.','fontweight','bold','fontsize',28)
+saveas(h(18),[pwd '/Plots/Plot18.png']);
 %% Plot 19
 x   =  Kinetic.k2{1,1}(:,1);
 y1  = (Kinetic.k3{1,1}(:,2)- Kinetic.k4{1,1}(:,2))./Kinetic.k3{1,1}(:,2);
@@ -406,6 +429,7 @@ lgd  = legend('Pine','Perl','Corn','Wood');
 set(lgd,'Position', [0.89 0.7 0.1 0.2],'Units', 'normalized');
 lgd.FontSize = 20;
 sgtitle('Experimental Relative Error wrt Polynomial Approx.','fontweight','bold','fontsize',28)
+saveas(h(19),[pwd '/Plots/Plot19.png']);
 %% Plot 20
 x   =  Kinetic.k2{1,1}(:,1);
 y1  = (Kinetic.k3{1,1}(:,3)- Kinetic.k4{1,1}(:,3))./Kinetic.k3{1,1}(:,3);
@@ -457,9 +481,9 @@ lgd  = legend('Pine','Perl','Corn','Wood');
 set(lgd,'Position', [0.89 0.7 0.1 0.2],'Units', 'normalized');
 lgd.FontSize = 20;
 sgtitle('Experimental Relative Error wrt Polynomial Approx.','fontweight','bold','fontsize',28)
-
-%%% Order Analysis
+saveas(h(20),[pwd '/Plots/Plot20.png']);
 %% Plot 21
+%%% Order Analysis
 x  = Kinetic.k2{1,1}(:,1);
 y1 = Kinetic.k16{1,1}{1,1}(:,1);
 y2 = Kinetic.k16{2,1}{1,1}(:,1);
@@ -477,6 +501,7 @@ ylabel('\bf Z_{\alpha} \it Function','fontsize',20)
 title('Craido Method for HR10','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood','Power Law(n)','JMA Model(n)','RO Model(2)');
 lgd.FontSize = 20;
+saveas(h(21),[pwd '/Plots/Plot21.png']);
 %% Plot 22
 x  = Kinetic.k2{1,1}(:,1);
 y1 = Kinetic.k16{1,1}{1,1}(:,2);
@@ -495,6 +520,7 @@ ylabel('\bf Z_{\alpha} \it Function','fontsize',20)
 title('Craido Method for HR15','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood','Power Law(n)','JMA Model(n)','RO Model(2)');
 lgd.FontSize = 20;
+saveas(h(22),[pwd '/Plots/Plot22.png']);
 %% Plot 23
 x  = Kinetic.k2{1,1}(:,1);
 y1 = Kinetic.k16{1,1}{1,1}(:,3);
@@ -513,6 +539,7 @@ ylabel('\bf Z_{\alpha} \it Function','fontsize',20)
 title('Craido Method for HR20','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood','Power Law(n)','JMA Model(n)','RO Model(2)');
 lgd.FontSize = 20;
+saveas(h(23),[pwd '/Plots/Plot23.png']);
 %% Plot 24
 x  = Kinetic.k2{1,1}(:,1);
 y1 = Kinetic.k16{1,1}{2,1}(:,1);
@@ -532,6 +559,7 @@ ylabel('\bf \eta \it Order','fontsize',20)
 title('Exp. Reaction Order Modelling for HR10','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(24),[pwd '/Plots/Plot24.png']);
 %% Plot 25
 x  = Kinetic.k2{1,1}(:,1);
 y1 = Kinetic.k16{1,1}{2,1}(:,2);
@@ -551,6 +579,7 @@ ylabel('\bf \eta \it Order','fontsize',20)
 title('Exp. Reaction Order Modelling for HR15','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(25),[pwd '/Plots/Plot25.png']);
 %% Plot 26
 x  = Kinetic.k2{1,1}(:,1);
 y1 = Kinetic.k16{1,1}{2,1}(:,3);
@@ -570,6 +599,7 @@ ylabel('\bf \eta \it Order','fontsize',20)
 title('Exp. Reaction Order Modelling for HR20','fontweight','bold','fontsize',28)
 lgd  = legend('Pine','Corn','Perl','Wood');
 lgd.FontSize = 20;
+saveas(h(26),[pwd '/Plots/Plot26.png']);
 %% Plot 27
 x  = Kinetic.k2{1,1}(:,1);
 y1 = Kinetic.k16{1,1}{4,1}(:,1);
@@ -1410,7 +1440,7 @@ ylabel('\bf d\alpha/dt (min^{-1}) \it Rate of Conversion','fontsize',20)
 title('Differential Thermal Gravimetric (DTG)','fontweight','bold','fontsize',24)
 lgd  = legend('Mill10','Swt10');
 lgd.FontSize = 20;
-%% Plot 62
+%% Plot 62+3i where i=0,1,2... 13.
 %%% ALL Deconvolution
 h = zeros();           
 for ii=0:13
@@ -1451,7 +1481,7 @@ t.FontWeight = 'bold';
             lgd  = legend('Original DTG','Hemicellulose','Cellulose','Lignin');
         end
 lgd.FontSize = 20;
-%% Plot 63
+%% Plot 63+3i where i=0,1,2... 13.
 x = Smod(n).Tn;
 y = Smod(n).da;
 h(63+3*ii) = figure('Position', get(0, 'Screensize'));
@@ -1489,7 +1519,7 @@ t.FontWeight = 'bold';
             lgd  = legend('Original DTG','Hemicellulose','Cellulose','Lignin');
         end
 lgd.FontSize = 20;
-%% Plot 64
+%% Plot 64+3i where i=0,1,2... 13.
 x = Smod(n).Tn;
 y = Smod(n).da;
 h(64+3*ii) = figure('Position', get(0, 'Screensize'));
@@ -1549,7 +1579,7 @@ t.FontWeight = 'bold';
         end
 lgd.FontSize = 20;
 end
-%% Plot 65
+%% Plot 104+3i where i=0,1,2... 13.
 for ii=0:13
 n=ii+1;
 x = Smod(n).Tn;
@@ -1572,7 +1602,7 @@ t.FontSize = 24;
 t.FontWeight = 'bold';
 lgd  = legend('Original DTG','Moisture');
 lgd.FontSize = 20;
-%% Plot 66
+%% Plot 105+3i where i=0,1,2... 13.
 x = Smod(n).Tn;
 y = Smod(n).da;
 h(105+3*ii) = figure('Position', get(0, 'Screensize'));
@@ -1594,7 +1624,7 @@ t.FontSize = 24;
 t.FontWeight = 'bold';
 lgd  = legend('Original DTG','Moisture');
 lgd.FontSize = 20;
-%% Plot 67
+%% Plot 106+3i where i=0,1,2... 13.
 x = Smod(n).Tn;
 y = Smod(n).da;
 h(106+3*ii) = figure('Position', get(0, 'Screensize'));
@@ -1741,7 +1771,6 @@ lgd  = legend('Millet','Mill_{Min}','Sweet','Swt_{Min}');
 lgd.FontSize = 20;
 title('Bias Variance Tradeoff','fontweight','bold','fontsize',24)
 %% Plot 149
-% Bias Variance Tradeoff
 x = (100:25:1500)';
 y = [Error.TotalError]';
 h(149) = figure('Position', get(0, 'Screensize'));
@@ -1750,9 +1779,7 @@ ax = gca; ax.FontSize = 16;
 xlabel('\bf \eta \it Sgolay Filter Strength','fontsize',20)
 ylabel('\bf Frequency of \eta','fontsize',20)
 title('Most Usable Filter Strength','fontweight','bold','fontsize',24)
-%}
 %% Plot 150
-% Bias Variance Tradeoff
 x = (1:1:14)';
 y1 = zeros(14,3);
 y2 = zeros(14,3);
@@ -1793,11 +1820,12 @@ lgd  = legend('Gaussian','Skew Gauss','Weibull');
 set(lgd,'Position', [0.89 0.7 0.1 0.2],'Units', 'normalized');
 lgd.FontSize = 20;
 sgtitle('Goodness of Fit Statistics','fontweight','bold','fontsize',28)
-%% Saving Plots
+%% Saving All Plots
 n=150;
 for i=1:n
  saveas(h(i),fullfile('/Users/mayankmahawar/Documents/MATLAB/TGA Modelling Publish/Plots',['Plot' num2str(i) '.png']));
 end
+%}
 %% Clear Var and Presets
 set(groot, 'DefaultFigureVisible', 'on')
 clear a b c am bm cm d dm x y funm i lgd ax i h n hline p dim str a t ii f

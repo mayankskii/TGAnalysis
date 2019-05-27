@@ -89,7 +89,10 @@ HHV = cell(3,1);
     HHV(1,1) = {HHV1};
     HHV(2,1) = {HHV2};
     HHV(3,1) = {HHV3};
+%% Create or check Plots folder
+[~, msg] = mkdir('Plots');
+disp(msg)
 %% Clearing Temporary Variables
-clear i temp Cmod2 n
+clear i temp Cmod2 n status msg
 %% Note
 % The scaling of the modelling program requires certain editing in each script.
