@@ -1,5 +1,5 @@
 function [fits, gof, coeff] = gmm1(Tfm,Tf2m)
-%  Data for 'GMM1' fit: input are column vector with
+%  Data for 'gmm1' fit: input are column vector with
 %      Tfm Input : fdam
 %      Tf2m Output: Tnm
 %  Output:
@@ -7,7 +7,7 @@ function [fits, gof, coeff] = gmm1(Tfm,Tf2m)
 %      gof : structure with goodness-of fit info.
 %      coeff : fit parameters
 %      Fit : fit vector(optional)
-%% Fit: 'GMM1'.
+%% Fit: 'Gaussian Distribution with 1 component'.
 x = Tf2m;
 x = x(x>0);
 y = Tfm;

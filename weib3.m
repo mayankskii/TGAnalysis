@@ -1,5 +1,5 @@
 function [fitresult, gof, coeff] = weib3(Tf,Tf2,Optns)
-%  Data for 'GMM1' fit: input are column vector with
+%  Data for 'weib3' fit: input are column vector with
 %      Tf Input : fda
 %      Tf2 Output: Tn
 %  Output:
@@ -7,7 +7,7 @@ function [fitresult, gof, coeff] = weib3(Tf,Tf2,Optns)
 %      gof : structure with goodness-of fit info.
 %      coeff : fit parameters
 %      Fit : fit vector(optional)
-%% Fit: 'GMM 20'.
+%% Fit: 'Weibull Distribution with 3 components'.
 x = Tf2;
 x = x(x>0);
 y = Tf;

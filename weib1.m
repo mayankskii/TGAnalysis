@@ -1,5 +1,5 @@
 function [fitresult, gof, coeff] = weib1(Tf,Tf2)
-%  Data for 'GMM1' fit: input are column vector with
+%  Data for 'weib1' fit: input are column vector with
 %      Tf Input : fdam
 %      Tf2 Output: Tnm
 %  Output:
@@ -7,7 +7,7 @@ function [fitresult, gof, coeff] = weib1(Tf,Tf2)
 %      gof : structure with goodness-of fit info.
 %      coeff : fit parameters
 %      Fit : fit vector(optional)
-%% Fit: 'Millet Mois'.
+%% Fit: 'Weibull Distribution with 1 component'.
 x = Tf2;
 x = x(x>0);
 y = Tf;
