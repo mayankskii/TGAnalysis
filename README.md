@@ -10,7 +10,7 @@ ThermoGravimetric Analysis (TGA) helps in understanding and optimising pyrolysis
 6.  HHV = Higher Heating Value.
 
 ## Problem Statement
-   **The main aim of this repository is to extract components, kinetic parameters and higher heating value from TG data beside sample seggregation and identification. Assuming that the overall DTG is the linear combination of DTGs of individual components.**
+   **The main aim of this repository is to extract components, kinetic parameters and higher heating value from TG data beside sample segregation and identification. Assuming that the overall DTG is the linear combination of DTGs of individual components.**
 
     Code Structure
 1.  Initialistion.m : The first file to be run, loads the dataset
@@ -28,3 +28,5 @@ ThermoGravimetric Analysis (TGA) helps in understanding and optimising pyrolysis
 
     Made by:
 > Mayank Mahawar
+> Indian Institute of Technology, Delhi
+> mayankskii@gmail.com
