@@ -27,4 +27,4 @@ ThermoGravimetric Analysis (TGA) helps in understanding and optimising pyrolysis
 ###### All other files are either dependent or other files like .sfit etc.
 
     Made by:
-> Mayank Mahawar | Indian Institute of Technology(IIT), Delhi | mayankskii@gmail.com
+> Mayank Mahawar **|** Indian Institute of Technology(IIT), Delhi **|** mayankskii@gmail.com
