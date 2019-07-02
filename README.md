@@ -14,7 +14,7 @@ ThermoGravimetric Analysis (TGA) helps in understanding and optimising pyrolysis
 ## Problem Statement
    **The main aim of this repository is to extract components, kinetic parameters and higher heating value from TG data beside sample segregation and identification. It is assumed that the overall DTG is the linear combination of DTGs of individual components.**
 
-    Code Structure
+    Code Structure and Run Order
 1.  Initialistion.m : The first file to be run, loads the dataset
 2.  MixtureModel.m : This file uses Mixture Modelling to deconvolute the DTG dataset to extract individual components.
 3.  Components.m : Extracting individual components
