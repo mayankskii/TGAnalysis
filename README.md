@@ -2,15 +2,17 @@
 ThermoGravimetric Analysis (TGA) helps in understanding and optimising pyrolysis process.
 
     Note
-1.  TG = Mass loss vs time graph for a sample during pyrolysis.
-2.  DTG = Differential TG.
+1.  TG = ThermoGravimetry graph measures mass loss vs time graph for a sample during pyrolysis.
+2.  DTG = Differential TG with respect to time graph.
 3.  T = Temperature.
 4.  DTA = Differential Thermal Analysis graph measures dT/dt from reference vs T during pyrolysis.
 5.  DSC = Differential Scanning Calorimetry graph measures dH/dt from reference vs T during pyrolysis.
 6.  HHV = Higher Heating Value.
+7.  ANN = Artificial Neural Networks.
+8.  Components = It refers to the sub components of the material like cellulose, lignin etc. in case of biomass.
 
 ## Problem Statement
-   **The main aim of this repository is to extract components, kinetic parameters and higher heating value from TG data beside sample segregation and identification. Assuming that the overall DTG is the linear combination of DTGs of individual components.**
+   **The main aim of this repository is to extract components, kinetic parameters and higher heating value from TG data beside sample segregation and identification. It is assumed that the overall DTG is the linear combination of DTGs of individual components.**
 
     Code Structure
 1.  Initialistion.m : The first file to be run, loads the dataset
@@ -24,7 +26,7 @@ ThermoGravimetric Analysis (TGA) helps in understanding and optimising pyrolysis
 9.  PatternRecognition.m : Pattern in sample origin and characteristics.
 10. PlotSave.m : Saving and generating all plots.
 
-###### All other files are either dependent or other files like .sfit etc.
+###### Beside the above 10 .m files all the other files are either dependencies or additonal files and folders.
 
     Made by:
 > Mayank Mahawar **|** Indian Institute of Technology(IIT), Delhi **|** mayankskii@gmail.com
